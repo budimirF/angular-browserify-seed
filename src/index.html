@@ -7,7 +7,22 @@
     <!--styles-->
 </head>
 <body>
-<div class="container" ng-view></div>
+  <header class="navbar">
+    <nav class="navWrapper">
+      <a href="/">Home</a>
+      <a href="http://google.com" target="_blank">Google</a>
+    </nav>
+  </header>
+  <div ng-view></div>
+
+  <footer>
+    <div>
+      Created by Aleksandr Fedorov
+    </div>
+    <div>
+      <a href="https://github.com/budimirF/angular-browserify-seed">GitHub repository</a>
+    </div>
+  </footer>
 <!--scripts-->
 <!--config-->
 </body>

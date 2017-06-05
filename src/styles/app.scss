@@ -20,3 +20,80 @@ a, a:visited {
   text-decoration: none;
 }
 
+.navbar {
+  background-color: rgba(62, 79, 86, 1);
+  height: 50px;
+  box-sizing: border-box;
+  padding: 0;
+
+  .navWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+    a {
+      display: block;
+      margin: 5px 10px;
+      padding: 10px 0;
+      border: 1px solid #fafafa;
+      border-radius: 3px;
+      color: #fafafa;
+      width: 200px;
+      height: 1em;
+
+    }
+    a:hover {
+      background-color: rgba(121, 107, 107, 0.84);
+
+      }
+  }
+}
+
+.container {
+  margin: 20px auto 80px auto;
+  max-width: 960px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+
+}
+.item {
+  padding: 5px;
+  width: 150px;
+  height: 200px;
+  margin: 10px 3em;
+  border: 1px solid #3e4f56;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all linear 0.2s;
+  &:hover {
+    box-shadow: 0 0 21px 3px rgba(0,0,0,0.75);
+  }
+}
+
+.album {
+  width: 150px;
+  height: 240px;
+}
+.singleImage {
+  width: auto;
+  height: auto;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 80px;
+  text-align: center;
+  background-color: rgba(62, 79, 86, 1);
+  color: #fafafa;
+  div {
+    margin: 15px auto 10px auto;
+  }
+  a {
+    color: #2d8bc5;
+  }
+}
