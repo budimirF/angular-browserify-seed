@@ -1,4 +1,4 @@
-## expressly angular 1.4 browserify seed
+## expressly angular 1.6 browserify seed
 
 ### Prerequisites
 - node 0.12
