@@ -14,5 +14,4 @@ module.exports = /*@ngInject*/
     $scope.getByAlbum = function (albumId) {
       $location.path('/album/' + albumId);
     };
-
   };
