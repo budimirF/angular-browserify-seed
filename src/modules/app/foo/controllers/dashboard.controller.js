@@ -15,16 +15,4 @@ module.exports = /*@ngInject*/
       $location.path('/album/' + albumId);
     };
 
-   /* angular.element($window).bind("scroll", function (){
-      if (this.pageYOffset > 7300) {
-         $scope.images = [{albumId : 101,
-                                id : 1,
-                      thumbnailUrl : "http://placehold.it/150/92c952",
-                             title : "accusamus beatae ad facilis cum similique qui sunt",
-                               url : "http://placehold.it/600/92c952"
-         }];
-        console.log($scope.images);
-      }
-      console.log(this.pageYOffset);
-    });*/
   };
