@@ -6,13 +6,12 @@
 module.exports = /*@ngInject*/
   function albumController($scope, $routeParams, $location, dashboardService) {
     var albumId = $routeParams.albumId;
-    getByAlbum();
 
-    function getByAlbum () {
+    $scope.getByAlbum = function () {
         dashboardService.getImagesByAlbum(albumId).then(function (res) {
         $scope.album = res;
       });
-    }
+    };
 
     $scope.getImage = function (imageId) {
       $location.path('/image/' + imageId);

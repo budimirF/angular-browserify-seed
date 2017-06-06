@@ -6,12 +6,11 @@
 module.exports = /*@ngInject*/
   function imageController($scope, $routeParams, dashboardService) {
     var photoId = $routeParams.photo_id;
-    function getImage () {
+
+    $scope.getImage = function  () {
       dashboardService.getImageById(photoId).then(function (res) {
         $scope.image = res;
       });
-    }
-
-    getImage();
+    };
 
   };

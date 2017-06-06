@@ -1,4 +1,4 @@
-<div class="container" >
+<div class="container" ng-init="getAllImages()">
   <div class="item" ng-repeat="image in images" ng-click="getByAlbum(image.albumId)" >
     <div><img ng-src="{{image.thumbnailUrl}}" alt=""></div>
     <div>Album #{{image.albumId}}</div>
